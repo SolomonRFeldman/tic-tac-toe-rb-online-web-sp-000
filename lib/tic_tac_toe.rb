@@ -1,5 +1,7 @@
 def play(board)
-  
+  while !over?(board)
+    turn(board)
+  end
 end
 
 def display_board(board)
