@@ -34,14 +34,6 @@ def turn(board)
   end
 end
 
-def play(board)
-  turns = 1
-  while turns < 10
-    turns += 1
-    turn(board)
-  end
-end
-
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
