@@ -4,9 +4,9 @@ def play(board)
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
-  end
   else
     puts "Cat's Game"
+  end
 end
 
 def display_board(board)
