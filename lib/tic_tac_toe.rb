@@ -2,9 +2,7 @@ def play(board)
   while !over?(board) && !draw?(board) #draw is obsolete but required by tests
     turn(board)
   end
-  if draw?(board)
-    puts "Cat's Game!"
-  elsif won?(board)
+  if won?(board)
     puts "Congratulations #{winner(board)}!"
   end
 end
