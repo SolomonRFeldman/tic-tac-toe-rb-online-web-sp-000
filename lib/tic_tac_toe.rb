@@ -1,5 +1,5 @@
 def play(board)
-  while !over?(board) && !draw?(board) #draw is obsolete but required by tests
+  while !over?(board) && !draw?(board) #draw? method is obsolete but required by tests
     turn(board)
   end
   if won?(board)
