@@ -1,5 +1,5 @@
 def play(board)
-  while !over?(board) || draw?(board)
+  while !over?(board) || draw?(board) do
     turn(board)
   end
   if draw?(board)
