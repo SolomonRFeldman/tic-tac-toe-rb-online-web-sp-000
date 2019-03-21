@@ -2,6 +2,11 @@ def play(board)
   while !over?(board)
     turn(board)
   end
+  if draw?(board)
+    puts "Cat's Game!"
+  elsif won?(board)
+    puts "Congratulations #{winner(board)}!"
+  end
 end
 
 def display_board(board)
@@ -37,7 +42,7 @@ def turn(board)
 end
 
 def turn_count(board)
-turns = 0
+  turns = 0
   board.each do |index|
     if index == "X" || index == "O"
       turns += 1
